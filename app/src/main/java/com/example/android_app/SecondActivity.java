@@ -13,6 +13,7 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        // Приймаєм повідомлення
         Intent intent = getIntent();
         String message = intent.getStringExtra("message");
         TextView messageText = (TextView) findViewById(R.id.messageText);
