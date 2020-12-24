@@ -7,230 +7,9 @@
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="413dp"
-        android:layout_height="416dp"
-        android:background="#DFDBDB"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/roboto_bold"
-            android:text="Best contacts"
-            android:textColor="#8A8A8A"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toTopOf="@+id/gridLayout"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.407" />
-
-        <GridLayout
-            android:id="@+id/gridLayout"
-            android:layout_width="331dp"
-            android:layout_height="287dp"
-            android:columnCount="2"
-            android:rowCount="2"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="157dp"
-                android:layout_height="135dp"
-                android:layout_row="0"
-                android:layout_column="0"
-                android:background="#FFFFFF">
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="92dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Note"
-                    android:onClick="get3Activity"
-                    android:textSize="14sp"
-                    app:backgroundTint="#247158"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/avatar"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@tools:sample/avatars" />
-
-                <TextView
-                    android:id="@+id/userName2"
-                    android:layout_width="90dp"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="42dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Kendra Weirst"
-                    android:textColor="#8A8A8A"
-                    android:textSize="14dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="157dp"
-                android:layout_height="135dp"
-                android:layout_row="0"
-                android:layout_column="1"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:background="#FFFFFF">
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="92dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Note"
-                    android:onClick="get3Activity"
-                    android:textSize="14sp"
-                    app:backgroundTint="#247158"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/avatar3"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@tools:sample/avatars" />
-
-                <TextView
-                    android:id="@+id/userName"
-                    android:layout_width="90dp"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="42dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Kendra Weirs"
-                    android:textColor="#8A8A8A"
-                    android:textSize="14dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="157dp"
-                android:layout_height="135dp"
-                android:layout_row="1"
-                android:layout_column="0"
-                android:layout_marginTop="17dp"
-                android:background="#FFFFFF">
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="92dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Note"
-                    android:onClick="get3Activity"
-                    android:textSize="14sp"
-                    app:backgroundTint="#247158"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/avatar4"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@tools:sample/avatars" />
-
-                <TextView
-                    android:id="@+id/userName3"
-                    android:layout_width="90dp"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="42dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Kendra Weirst"
-                    android:textColor="#8A8A8A"
-                    android:textSize="14dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="157dp"
-                android:layout_height="135dp"
-                android:layout_row="1"
-                android:layout_column="1"
-                android:layout_marginStart="17dp"
-                android:layout_marginLeft="17dp"
-                android:layout_marginTop="17dp"
-                android:background="#FFFFFF">
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="92dp"
-                    android:layout_height="40dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Note"
-                    android:onClick="get3Activity"
-                    android:textSize="14sp"
-                    app:backgroundTint="#247158"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/avatar5"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:srcCompat="@tools:sample/avatars" />
-
-                <TextView
-                    android:id="@+id/userName4"
-                    android:layout_width="90dp"
-                    android:layout_height="0dp"
-                    android:layout_marginBottom="42dp"
-                    android:fontFamily="@font/roboto_bold"
-                    android:text="Kendra Weirst"
-                    android:textColor="#8A8A8A"
-                    android:textSize="14dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </GridLayout>
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="411dp"
-        android:layout_height="313dp"
+        android:layout_height="150dp"
         android:background="#247158"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -241,9 +20,9 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="156dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginLeft="236dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto"
             android:text="Good morning,"
             android:textColor="#91B6AA"
@@ -255,9 +34,9 @@
             android:id="@+id/currentUserName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="236dp"
+            android:layout_marginLeft="236dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_bold"
             android:text="Artem"
             android:textColor="#ffffff"
@@ -265,40 +44,92 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginTop="40dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.9"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
-
-        <Button
-            android:id="@+id/sendBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="284dp"
-            android:layout_marginRight="284dp"
-            android:onClick="get2Activity"
-            android:text="2 Актівіті"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
-
         <EditText
             android:id="@+id/editCurrentUserName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="169dp"
+            android:layout_height="42dp"
             android:ems="10"
-            android:hint="Введіть ваше ім'я"
+            android:hint="Enter your name"
             android:inputType="textPersonName"
             android:textColor="#FFFFFF"
             android:textColorHint="#FFFFFF"
             tools:layout_editor_absoluteX="24dp"
             tools:layout_editor_absoluteY="16dp" />
 
+        <Button
+            android:id="@+id/aboutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onAboutClick"
+            android:text="About"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sendBtn" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onBestContactsClick"
+            android:text="best contacts"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/aboutBtn" />
+
+        <Button
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="4dp"
+            android:onClick="onAgreementClick"
+            android:text="Agreement"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button2" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="410dp"
+        android:layout_height="416dp"
+        android:layout_marginBottom="112dp"
+        android:background="#DFDBDB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:onClick="get2Activity"
+        android:text="2 ACtivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainContainer" />
+
+    <Button
+        android:id="@+id/activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="get3Activity"
+        android:text="3 Activity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sendBtn"
+        app:layout_constraintTop_toBottomOf="@+id/mainContainer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

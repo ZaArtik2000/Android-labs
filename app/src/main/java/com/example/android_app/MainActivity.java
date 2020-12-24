@@ -1,6 +1,8 @@
 package com.example.android_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.content.Intent;
@@ -34,22 +36,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void get2Activity(View view) {
-        // действия, совершаемые после нажатия на кнопку
-        // Создаем объект Intent для вызова новой Activity
         Intent intent = new Intent(this, SecondActivity.class);
-        // Получаем текстовое поле в текущей Activity
-//        EditText editText = (EditText) findViewById(R.id.textInput);
-        // Получае текст данного текстового поля
-//        String message = editText.getText().toString();
-        // Добавляем с помощью свойства putExtra объект - первый параметр - ключ,
-        // второй параметр - значение этого объекта
-//        intent.putExtra("message", message);
-        // запуск activity
         startActivity(intent);
     }
 
     public void get3Activity(View view) {
-        Intent intent = new Intent(this, SecondActivity.class);
+        Intent intent = new Intent(this, ThirdActivity.class);
         startActivity(intent);
+    }
+
+    public void onAboutClick(View view) {
+        Fragment aboutFragment = new AboutFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.mainContainer, aboutFragment);
+        ft.commit();
+    }
+
+    public void onBestContactsClick(View view) {
+        Fragment bestContactsFragment = new BestContactsFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.mainContainer, bestContactsFragment);
+        ft.commit();
+    }
+
+    public void onAgreementClick(View view) {
+        Fragment agreementFragment = new AgreementFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.mainContainer, agreementFragment);
+        ft.commit();
     }
 }
